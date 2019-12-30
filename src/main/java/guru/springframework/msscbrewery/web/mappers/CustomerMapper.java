@@ -3,7 +3,7 @@ import guru.springframework.msscbrewery.domain.Customer;
 import guru.springframework.msscbrewery.web.model.CustomerDto;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(uses={DateMapper.class})
 public interface CustomerMapper {
     Customer customerDtotoCustomer(CustomerDto dto);
     CustomerDto CustomertoCustomerDto(Customer customer);
