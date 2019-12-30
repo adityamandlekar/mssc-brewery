@@ -45,6 +45,7 @@ public class BeerController {
     }
 
     @DeleteMapping({"/{beerId}"})
+    //@ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void DeleteBeerbyID(@PathVariable("beerId") UUID beerId)
     {
