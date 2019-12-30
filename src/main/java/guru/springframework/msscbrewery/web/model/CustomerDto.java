@@ -5,9 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.UUID;
 
 /**
@@ -21,8 +20,7 @@ public class CustomerDto {
 
     private UUID id;
 
-    @NotNull
-    @Min(value = 3, message = "Name should not be less than 3 characters")
-    @Max(value = 100, message = "Name should not be greater than 100 characters")
+    @NotBlank
+    @Size(min = 3, max = 100)
     private String name;
 }
