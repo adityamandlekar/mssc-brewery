@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/adityamandlekar/mssc-brewery.svg?style=svg)](https://circleci.com/gh/adityamandlekar/mssc-brewery)
 # SFG Beer Works - Brewery Microservice
 
 Source code in this repository is to support my on line courses:
